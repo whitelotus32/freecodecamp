@@ -7,7 +7,48 @@
     <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-    <h1>Survey Form</h1>
-    <p>Please fill out this form with your information</p>
+    <h1>CodeAlchemy Survey</h1>
+    <p id="description">Thanks for participating! Let's make this quick. Please fill out some questions below to help us improve your experience. Your input will make a huge difference!</p>
+    <form id="survey-form">
+        <fieldset>
+          <label for="name" id="name-label">Name: <input id="name" name="name" type="text" placeholder=“Enter your First and Last Name” required /></label>
+          <label for="email" id="email-label">Email: <input id="email" name="email" type="email" placeholder=“Enter your Email” required /></label>
+          <label for="age" id="number-label">Age (optional): <input id="number" name="age" type="number" min="0" max="100" placeholder=“Enter your Age” required /></label>
+        </fieldset>
+        <fieldset>
+          <p>How did you hear about CodeAlchemy?</p>
+          <select id="dropdown" required >
+            <option disabled selected value>Select an option</option>
+            <option>Radio</option>
+            <option>Social Media (Facebook, Instagram, etc.)</option>
+            <option>Word of Mouth</option>
+            <option>Streaming Service Ad</option>
+          </select>
+        </fieldset>
+        <fieldset>
+          <p>What devices do you use to access our website?</p>
+          <span>(Select all that apply)</span>
+          <label><input name="device" value="desktop-laptop" type="checkbox" class="input-checkbox" /> Desktop / Laptop</label>
+          <label><input name="device" value="smartphone" type="checkbox" class="input-checkbox" /> Smartphone</label>
+          <label><input name="device" value="tablet" type="checkbox" class="input-checkbox" /> Tablet</label>
+          <label><input name="device" value="Other" type="checkbox" class="input-checkbox" /> Other</label>
+        </fieldset>
+        <fieldset>
+          <p>How easy or difficult is it to navigate our website?</p>
+          <label><input name="user-difficulty" value="very-difficult" type="radio" class="input-radio" /> Very difficult</label>
+          <label><input name="user-difficulty" value="difficult" type="radio" class="input-radio" /> Difficult</label>
+          <label><input name="user-difficulty" value="neutral" type="radio" class="input-radio" /> Neutral</label>
+          <label><input name="user-difficulty" value="easy" type="radio" class="input-radio" /> Easy</label>
+          <label><input name="user-difficulty" value="very-easy" type="radio" class="input-radio" /> Very Easy</label>
+        </fieldset>
+        <fieldset>
+          <p>Any comments or suggestions?</p>
+          <textarea id="comments" class="input-teaxtarea" name="comment" placeholder="Share Your Insight Here..." name="comment"></textarea>
+        </fieldset>
+        <label for="not-a-robot">
+          <input class="inline" id="not-a-robot" value="robot" type="checkbox" name="not-a-robot" required name="not-a-robot" /> I am NOT a robot
+        </label>
+        <input id="submit" type="submit" value="Submit" />
+    </form>
 </body>
 </html>
