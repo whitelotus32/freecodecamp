@@ -1,0 +1,24 @@
+/* CSS can make elements with this class completely hidden from the visual page, but still be announced by screen readers.
+The span[class~="sr-only"] selector will select any span element whose class includes sr-only. */
+span[class~="sr-only"] {
+    border: 0;
+    /* The CSS clip property is used to define the visible portions of an element. */
+    clip: rect(1px, 1px, 1px, 1px);
+    /* The clip-path property determines the shape the clip property should take. */
+    clip-path: inset(50%);
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+    white-space: nowrap;
+    padding: 0;
+    margin: -1px;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    color: #0a0a23;
+}
