@@ -1,17 +1,17 @@
 /* CSS can make elements with this class completely hidden from the visual page, but still be announced by screen readers.
 The span[class~="sr-only"] selector will select any span element whose class includes sr-only. */
 span[class~="sr-only"] {
-    border: 0;
+    border: 0 !important;
     /* The CSS clip property is used to define the visible portions of an element. */
-    clip: rect(1px, 1px, 1px, 1px);
+    clip: rect(1px, 1px, 1px, 1px) !important;
     /* The clip-path property determines the shape the clip property should take. */
-    clip-path: inset(50%);
-    height: 1px;
-    width: 1px;
-    overflow: hidden;
-    white-space: nowrap;
-    padding: 0;
-    margin: -1px;
+    clip-path: inset(50%) !important;
+    height: 1px !important;
+    width: 1px !important;
+    overflow: hidden !important;
+    white-space: nowrap !important;
+    padding: 0 !important;
+    margin: -1px !important;
 }
 
 html {
@@ -42,4 +42,35 @@ h1 .flex span:first-of-type {
 
 h1 .flex span:last-of-type {
     font-size: 1.2em;
+}
+
+section {
+    max-width: 40rem;
+    margin: 0 auto;
+    border: 2px solid #d0d0d5;
+}
+
+#years {
+    display: flex;
+    justify-content: flex-end;
+    position: sticky;
+    top: 0;
+    /* The calc() function is a CSS function that allows you to calculate a value based on other values. */
+    margin: 0 -2px;
+    padding: 0.5rem calc(1.25rem + 2px) 0.5rem 0;
+}
+
+#years span[class] {
+    font-weight: bold;
+    width: 4.5rem;
+    text-align: right;
+}
+
+.table-wrap {
+    padding: 0 0.75rem 1.5rem 0.75rem;
+}
+
+/* The :not() pseudo-selector is used to target all elements that do not match the selector */
+span {
+    font-weight: normal;
 }
