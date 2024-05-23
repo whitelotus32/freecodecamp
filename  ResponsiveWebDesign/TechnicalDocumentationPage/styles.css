@@ -60,3 +60,15 @@ ul {
 li {
     margin-bottom: 5px;
 }
+
+@media (max-width: 768px) {
+    #navbar {
+        width: 100%;
+        position: relative;
+        padding: 10px 0;
+    }
+    #main-doc {
+        margin-left: 0;
+        padding: 10px;
+    }
+}
