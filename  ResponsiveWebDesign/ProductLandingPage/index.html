@@ -7,6 +7,72 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    
+    <header id="header">
+        <div class="logo">
+            <img id="header-img" src="./Images/logo.png" alt="Logo">
+        </div>
+        <nav id="nav-bar">
+            <ul>
+                <li>
+                    <a class="nav-link" href="#features">Features</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="#video">Video</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="#pricing">Pricing</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <section id="hero">
+            <h2>Are you tired of struggling with your garden?</h2>
+            <h4>Do you dream of having a lush, thriving garden without the hassle? Introducing our revolutionary <strong>Gardening Made Easy</strong> product!</h4>
+
+            <h4>Transform your gardening experience from daunting to delightful.</h4>
+
+            <h4>Say goodbye to disapproving neighbors..</h4> 
+            
+            <h4>Our solution is designed to simplify every aspect of gardening, from planting to harvest!</h4>
+            <form id="form" action="https://www.freecodecamp.com/email-submit">
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                <input type="submit" id="submit" value="Get Started Now" class="btn">
+            </form>
+        </section>
+    </div>
+    <main>
+        <section id="features">
+            <div class="grid-header">
+                <h2>Why People Love Seeding Square</h2>
+            </div>
+            <div class="grid feat1">
+                <p>Features of the Seeding Square</p>
+                <img 
+                src="./Images/SeedingSquare.png"
+                alt="image of the seeding square"
+                loading="lazy"
+                class="image-1"
+                width="450"
+                height="400"
+                />
+            </div>
+            <div class="grid feat2">
+                <p>Features of the Planting Guide</p>
+                <img
+                src="./Images/PlantingGuide.png"
+                alt="image of the planting guide"
+                loading="lazy"
+                class="image-2"
+                width="500"
+                height="600"
+                />
+            </div>
+        </section>
+        <iframe id="video" height="315" src="https://www.youtube-nocookie.com/embed/q5dv7ZG9Uos?si=iIBz20AF2b4kxXvE" frameborder="0" allowfullscreen></iframe>
+        <section id="pricing">
+            <!-- Pricing content -->
+        </section>
+    </main>
 </body>
 </html>
