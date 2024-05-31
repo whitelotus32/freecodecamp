@@ -1,0 +1,133 @@
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 20px; 
+    background-color: #f9f9f9; 
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+}
+
+.grid-item {
+    display: flex;
+    align-items: center; 
+}
+
+.grid-item img {
+    max-width: 100%;
+    height: auto;
+    margin-right: 20px; 
+}
+
+.grid-item p {
+    margin: 0; 
+}
+
+.grid-item ul {
+    padding-left: 20px; 
+}
+
+#header {
+    background-color: black;
+    padding: 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+.logo {
+    display:flex;
+}
+
+.logo img {
+    max-width: 100%;
+}
+
+#nav-bar {
+    display: flex;
+    float: right;
+}
+
+#nav-bar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+#nav-bar li {
+    margin-right: 20px;
+}
+
+.nav-link {
+    color: white;
+    text-decoration: none;
+    font-size: 22px;
+}
+
+.nav-link:hover {
+    text-decoration: underline;
+}
+
+/* Features Section */
+#features {
+    margin-top: 100px; 
+}
+
+.grid-header {
+    background-color: #3cb371; 
+    color: #fff; 
+    padding: 20px;
+    border-radius: 10px 10px 0 0; 
+}
+
+.grid-header h2 {
+    margin: 0; 
+}
+
+.grid-feat1, .grid-feat2 {
+    background-color: #fff; 
+    padding: 20px;
+    border-radius: 0 0 10px 10px; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+}
+
+/* Small screens (phones) */
+@media only screen and (max-width: 600px) {
+    #header {
+        padding: 10px; 
+    }
+
+    .logo {
+        flex-grow: 0; 
+    }
+
+    #nav-bar {
+        display: none; 
+    }
+
+    .menu-icon {
+        display: block;
+        cursor: pointer;
+    }
+
+    #nav-bar ul.show {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+}
+
+/* Large screens (laptops, desktops) */
+@media only screen and (min-width: 1025px) {
+}
